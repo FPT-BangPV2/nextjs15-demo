@@ -64,31 +64,46 @@ The project uses the **App Router** introduced in Next.js 13+ and is updated for
 
 ## 🛠️ How to Run
 
+### Clone the repository
+
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/nextjs15-seo-demo.git
 cd nextjs15-seo-demo
+```
 
-# Install dependencies
+### Install dependencies
+
+```bash
 npm install
 or
 yarn install
 
-# Run the development server
+```
+
+### 🔧 Backend
+
+```shell
+
+cd bg-product
 npm run dev
-or
+
+```
+
+API will be available at: http://localhost:3001
+
+### 💻 Frontend
+
+```shell
+
+cd fe-product
 yarn dev
 ```
 
-Visit http://localhost:3000 to view the app.
+Frontend will be available at: http://localhost:3060
 
 ## 🚀 Deployment
 
-You can deploy this project easily using Vercel:
-
-Push your code to GitHub.
-Connect your GitHub repo to Vercel.
-Vercel will auto-detect the Next.js project and deploy it.
+Not implement
 
 ## 📌 Notes
 
