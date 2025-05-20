@@ -10,13 +10,13 @@ The project uses the **App Router** introduced in Next.js 13+ and is updated for
 
 ## ✨ Features
 
-- ✅ **Server-side Rendering (SSR)** with `getServerSideProps`
-- ✅ **Static Site Generation (SSG)** with `getStaticProps` and ISR
-- ✅ **Dynamic rendering** using App Router and Route Handlers
-- ✅ **Custom Cache-Control headers** for performance tuning
-- ✅ **SEO optimization** with meta tags, Open Graph, Twitter Cards, and JSON-LD
-- ✅ **Sitemap and robots.txt** support
-- ✅ **TypeScript + Tailwind CSS** for modern development
+- [x] **Server-side Rendering (SSR)** with `getServerSideProps`
+- [x] **Server-side Rendering (SSR)** with `getServerSideProps`
+- [x] **Static Site Generation (SSG)** with `getStaticProps` and ISR
+- [x] **Custom Cache-Control headers** via `res.setHeader` in SSR
+- [x] **TypeScript + Tailwind CSS** for modern development
+- [ ] **SEO optimization** with `next/head`, Open Graph, Twitter Cards, and JSON-LD
+- [ ] **Sitemap and robots.txt** support
 
 ---
 
@@ -68,4 +68,5 @@ You can override cache headers using res.setHeader() in getServerSideProps.
 SEO is enhanced using next/head and structured data (JSON-LD).
 
 ## 📄 License
+
 MIT License — feel free to use and modify this project for your own purposes.
