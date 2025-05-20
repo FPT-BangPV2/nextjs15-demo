@@ -80,6 +80,8 @@ yarn install
 
 ```
 
+## Run Development
+
 ### 🔧 Backend
 
 ```shell
@@ -101,16 +103,23 @@ yarn dev
 
 Frontend will be available at: http://localhost:3060
 
+## 🚀 Build & Test for Production (Local)
+
+### Build Frontend (Next.js)
+
+```bash
+
+cd fe-product
+yarn build
+yarn start
+
+```
+
+App will run production at: http://localhost:3070
+
 ## 🚀 Deployment
 
 Not implement
-
-## 📌 Notes
-
-The project uses App Router (/app) instead of the legacy /pages directory.
-Default SSR responses include Cache-Control: private, no-cache, no-store, must-revalidate.
-You can override cache headers using res.setHeader() in getServerSideProps.
-SEO is enhanced using next/head and structured data (JSON-LD).
 
 ## 📄 License
 
