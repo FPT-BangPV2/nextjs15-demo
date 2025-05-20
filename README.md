@@ -22,10 +22,10 @@ The project uses the **App Router** introduced in Next.js 13+ and is updated for
 
 ## 🧰 Technologies Used
 
-- Next.js 15
-- React 18
+- Next.js 15.2
+- React 19
 - TypeScript
-- Tailwind CSS
+- Tailwind CSS ^4
 - Vercel (for deployment)
 
 ---
