@@ -117,8 +117,6 @@ yarn start
 
 App will run production at: http://localhost:3070
 
-## 🚀 Deployment
-
 Not implement
 
 ## 📄 License
