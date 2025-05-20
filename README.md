@@ -32,6 +32,36 @@ The project uses the **App Router** introduced in Next.js 13+ and is updated for
 
 ## 📁 Folder Structure
 
+```
+/be-product
+├── /src
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── services/
+├── app.js
+├── server.js
+└── .env
+
+/fe-product
+├── /public
+│   └── /images
+├── /src
+│   ├── /pages
+│   │   └── products/[id]/index.tsx
+│   │   └── index.tsx
+│   │   └── products.tsx
+│   ├── /components
+│   ├── /styles
+│   └── /types
+├── next.config.js
+├── tailwind.config.js
+├── tsconfig.json
+└── .env.local
+
+```
+
 ## 🛠️ How to Run
 
 ```bash
