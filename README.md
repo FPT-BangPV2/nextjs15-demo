@@ -1,7 +1,5 @@
 # 🌐 Next.js 15 SEO & Rendering Demo
 
-## 🚀 Introduction
-
 This project is a **Next.js 15 demo** showcasing modern rendering strategies and SEO optimization techniques. It demonstrates how to use **Server-side Rendering (SSR)**, **Static Site Generation (SSG)**, and **custom Cache-Control headers** to build fast, SEO-friendly web applications.
 
 ---
