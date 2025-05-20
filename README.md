@@ -23,7 +23,6 @@ This project is a **Next.js 15 demo** showcasing modern rendering strategies and
 - React 19
 - TypeScript
 - Tailwind CSS ^4
-- Vercel (for deployment)
 
 ---
 
