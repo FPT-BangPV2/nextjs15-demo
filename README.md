@@ -9,7 +9,6 @@ This project is a **Next.js 15 demo** showcasing modern rendering strategies and
 ## ✨ Features
 
 - [x] **Server-side Rendering (SSR)** with `getServerSideProps`
-- [x] **Server-side Rendering (SSR)** with `getServerSideProps`
 - [x] **Static Site Generation (SSG)** with `getStaticProps` and ISR
 - [x] **Custom Cache-Control headers** via `res.setHeader` in SSR
 - [x] **TypeScript + Tailwind CSS** for modern development

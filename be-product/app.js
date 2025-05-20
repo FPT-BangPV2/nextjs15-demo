@@ -9,14 +9,14 @@ app.use(cors());
 app.use(express.json());
 
 app.use((req, res, next) => {
-  //Page sản phẩm công khai: Cache-Control: public, max-age=300
+  //Page product public: Cache-Control: public, max-age=300
   // res.set("Cache-Control", "public, max-age=300");
 
-  //Page tài khoản người dùng: Cache-Control: private, no-store
-  //res.set("Cache-Control", "private, no-store");
+  //Page private: Cache-Control: private, no-store
+  // res.set("Cache-Control", "private, no-store");
 
-  //API trả về dữ liệu động: Cache-Control: no-store, must-revalidate
-  //   res.set("Cache-Control", "no-store, must-revalidate");
+  //API return data dynamic: Cache-Control: no-store, must-revalidate
+  // res.set("Cache-Control", "no-store, must-revalidate");
 
   next();
 });
