@@ -67,6 +67,21 @@ This project is a **Next.js 15 demo** showcasing modern rendering strategies and
 ```bash
 git clone https://github.com/your-username/nextjs15-seo-demo.git
 cd nextjs15-seo-demo
+
+```
+
+### Important: Work on the develop Branch
+
+```bash
+# Check your current branch
+git branch
+
+# If you're not on develop, switch to it:
+git checkout develop
+
+# Pull the latest updates
+git pull origin develop
+
 ```
 
 ### Install dependencies
