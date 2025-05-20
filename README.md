@@ -4,8 +4,6 @@
 
 This project is a **Next.js 15 demo** showcasing modern rendering strategies and SEO optimization techniques. It demonstrates how to use **Server-side Rendering (SSR)**, **Static Site Generation (SSG)**, and **custom Cache-Control headers** to build fast, SEO-friendly web applications.
 
-The project uses the **App Router** introduced in Next.js 13+ and is updated for **Next.js 15**.
-
 ---
 
 ## ✨ Features
