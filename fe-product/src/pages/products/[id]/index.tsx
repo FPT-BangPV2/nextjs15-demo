@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
+
 import { Product } from '../../../types/product';
 import { GetServerSideProps } from 'next';
 
@@ -9,10 +12,12 @@ interface ProductDetailProps {
 }
 
 export const getServerSideProps: GetServerSideProps<ProductDetailProps> = async (context) => {
-  // res.setHeader('Cache-Control', 'no-store, must-revalidate');
+  const { res, params } = context;
+  
+  // Override header 
+  res.setHeader('Cache-Control', 'no-cache, must-revalidate');
 
   try {
-    const { params } = context;
     const { id } = params as { id: string };
 
     const res = await fetch(`http://localhost:3001/products/${id}`, {
@@ -35,6 +40,15 @@ export const getServerSideProps: GetServerSideProps<ProductDetailProps> = async 
 
 export default function ProductDetail({ product, error }: ProductDetailProps) {
 
+  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+    mode: "snap",
+    slides: {
+      perView: 1,
+      spacing: 10,
+    },
+  });
+
   if (error) {
     return <div>{error}</div>;
   }
@@ -49,16 +63,35 @@ export default function ProductDetail({ product, error }: ProductDetailProps) {
 
       <div className="flex flex-col md:flex-row items-start gap-4">
         <div className='min-w-[450px]'>
-          <Image
+
+          {/* Image Slider */}
+          <div ref={sliderRef} className="keen-slider mb-6">
+            {product.images?.map((img, index) => (
+              <div key={index} className="keen-slider__slide">
+                <Image
+                  src={img || "/fallback.jpg"}
+                  alt={`${product.slug}-${index}`}
+                  width={800}
+                  height={500}
+                  className="w-full h-auto object-cover rounded"
+                  unoptimized
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* <Image
             src={product?.images[0] || "/fallback.jpg"}
             alt={product?.slug || "Product"}
             unoptimized
             width={800}
             height={500}
             className='mb-4'
-          />
+          /> */}
 
         </div>
+
+        {/* Product Info */}
         <div>
           <p className='mb-4 font-medium text-2xl'>{product?.title}</p>
           <p className='mb-8'>Mô tả: {product?.description}</p>
